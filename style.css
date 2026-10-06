@@ -98,7 +98,7 @@ footer{background:#081810;color:#d9dfd9;padding:55px 8%;display:grid;grid-templa
 }
 @media(max-width:400px){
   .brand-logo{width:82px;height:52px}
-  .brand-name{display:none}
+  
   .hero-logo-panel{width:min(350px,82vw)}
 }
 @media(max-width:600px){
@@ -106,6 +106,44 @@ footer{background:#081810;color:#d9dfd9;padding:55px 8%;display:grid;grid-templa
   .hero-logo-panel{margin-bottom:18px}
   .hero-logo-panel img{max-height:125px}
 }
+
+
+
+@media (max-width: 600px) {
+
+    .brand {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .brand-logo {
+        width: 70px;
+        height: 48px;
+        object-fit: contain;
+    }
+
+    .brand-name {
+        display: block;
+    }
+
+    .brand-name strong {
+        font-size: 16px;
+        letter-spacing: .12em;
+    }
+
+    .brand-name small {
+        font-size: 6px;
+        letter-spacing: .2em;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+    }
+}
+
 
 
 /* Communication-only contact section */
