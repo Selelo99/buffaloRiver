@@ -41,7 +41,7 @@ h2{font-family:"Cormorant Garamond",serif;font-size:clamp(48px,6vw,82px);line-he
 .contact{background:#e5e6dc}.contact-card{display:grid;grid-template-columns:1fr 1fr;gap:10%;max-width:1150px;margin:auto;background:#f3efe4;padding:70px;box-shadow:0 25px 60px rgba(20,35,27,.08)}.contact-card>div>p{max-width:420px;color:#656c65;margin-top:24px}.contact form{display:grid;gap:14px}.contact label{font-size:9px;text-transform:uppercase;letter-spacing:.15em;font-weight:700;color:#4b554d}.contact input,.contact textarea{width:100%;margin-top:7px;border:1px solid #c9cec4;background:#fff;padding:12px 13px;outline:none}.contact input:focus,.contact textarea:focus{border-color:#6b806c}.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.form-note{font-size:11px;color:#49634f}
 footer{background:#081810;color:#d9dfd9;padding:55px 8%;display:grid;grid-template-columns:1fr 1fr 1fr;align-items:center}.footer-brand{display:flex;align-items:center;gap:12px}.footer-links{display:flex;justify-content:center;gap:22px;font-size:10px;text-transform:uppercase;letter-spacing:.12em}.footer-links a:hover{color:#d9b873}footer>p{text-align:right;font-size:9px;color:#87938b}
 .lightbox{position:fixed;z-index:50;inset:0;background:rgba(4,12,8,.94);display:none;align-items:center;justify-content:center;padding:6%;flex-direction:column}.lightbox.open{display:flex}.lightbox img{max-width:92vw;max-height:80vh;object-fit:contain}.lightbox-title{color:#fff;font-family:"Cormorant Garamond",serif;font-size:28px;margin-top:15px}.lightbox-close{position:absolute;right:30px;top:20px;background:none;border:0;color:#fff;font-size:42px;cursor:pointer}
-@media(max-width:900px){.nav-links{display:none;position:absolute;top:82px;left:0;right:0;background:#0b2119;padding:20px 8%;flex-direction:column;align-items:flex-start}.nav-links.open{display:flex}.menu-toggle{display:block}.hero-content{margin-left:6%}.intro-grid,.stay,.contact-card{grid-template-columns:1fr}.experience-grid{grid-template-columns:1fr 1fr;grid-template-rows:280px 280px 280px}.experience-card.tall{grid-row:span 1}.gallery-grid{grid-template-columns:1fr 1fr}.gallery-item.large{grid-row:span 1}.stay-image{min-height:400px}.contact-card{padding:45px 28px}.footer-links{justify-content:flex-start;margin:25px 0}footer{grid-template-columns:1fr}footer>p{text-align:left}}
+@media(max-width:1000px){.nav-links{display:none;position:absolute;top:82px;left:0;right:0;background:#0b2119;padding:20px 8%;flex-direction:column;align-items:flex-start}.nav-links.open{display:flex}.menu-toggle{display:block}.hero-content{margin-left:6%}.intro-grid,.stay,.contact-card{grid-template-columns:1fr}.experience-grid{grid-template-columns:1fr 1fr;grid-template-rows:280px 280px 280px}.experience-card.tall{grid-row:span 1}.gallery-grid{grid-template-columns:1fr 1fr}.gallery-item.large{grid-row:span 1}.stay-image{min-height:400px}.contact-card{padding:45px 28px}.footer-links{justify-content:flex-start;margin:25px 0}footer{grid-template-columns:1fr}footer>p{text-align:left}}
 @media(max-width:600px){.topbar{font-size:8px}.topbar span:last-child{display:none}.navbar{padding:0 6%}.hero{min-height:88vh}.hero h1{font-size:62px}.hero-copy{font-size:13px}.hero-actions{flex-direction:column;align-items:flex-start}.section{padding:75px 6%}.section-heading{display:block}.section-heading>p{margin-top:18px}.filters{margin-top:25px}.experience-grid,.gallery-grid{grid-template-columns:1fr;grid-auto-rows:300px}.statement{min-height:50vh;background-attachment:scroll}.stay-content{padding:70px 8%}.form-row{grid-template-columns:1fr}.contact-card h2{font-size:55px}.footer-links{flex-wrap:wrap}}
 
 /* Buffalo head brand mark */
@@ -96,7 +96,7 @@ footer{background:#081810;color:#d9dfd9;padding:55px 8%;display:grid;grid-templa
   mix-blend-mode:screen;
   margin-right:4px;
 }
-@media(max-width:900px){
+@media(max-width:400px){
   .brand-logo{width:82px;height:52px}
   .brand-name{display:none}
   .hero-logo-panel{width:min(350px,82vw)}
@@ -150,4 +150,34 @@ footer{
   display:grid;
   grid-template-columns:1fr 1fr 1fr;
   align-items:center;
+}
+
+
+/*Footer styles for small phones*/
+@media (max-width: 600px) {
+    footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+        justify-items: center;
+    }
+
+    .footer-brand {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-logo {
+        margin: 0 auto 8px;
+    }
+
+    .footer-links {
+        justify-content: center;
+        margin: 25px 0;
+    }
+
+    footer > p {
+        text-align: center;
+        margin-top: 5px;
+    }
 }
