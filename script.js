@@ -56,10 +56,3 @@ function closeLightbox() {
 document.querySelector(".lightbox-close").addEventListener("click", closeLightbox);
 lightbox.addEventListener("click", e => { if (e.target === lightbox) closeLightbox(); });
 document.addEventListener("keydown", e => { if (e.key === "Escape") closeLightbox(); });
-
-// Demo enquiry form
-document.getElementById("bookingForm").addEventListener("submit", e => {
-  e.preventDefault();
-  document.getElementById("formNote").textContent =
-    "Thank you — your enquiry has been captured for this demo. Connect the form to your backend/email service for real bookings.";
-});
