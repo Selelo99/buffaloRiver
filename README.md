@@ -8,8 +8,7 @@ A responsive HTML/CSS/JavaScript concept website for a wildlife resort where Buf
 - script.js — mobile menu, gallery filters, lightbox and demo enquiry form
 - hero-buffalo-river.png — generated buffalo/river landscape used as the hero
 
-## Run
-Open `index.html` in a browser, or use VS Code + Live Server.
+
 
 ## Next development steps
 1. Replace the demo gallery URLs with the resort's own photographs.
